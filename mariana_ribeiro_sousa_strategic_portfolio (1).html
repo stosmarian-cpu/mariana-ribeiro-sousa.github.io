@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariana Ribeiro Sousa | Strategic Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        sage: {
+                            50: '#f9fbf9',
+                            100: '#e5eadd',
+                            200: '#d0d8ce',
+                            300: '#a3b1a2',
+                            600: '#5e7d5e',
+                            800: '#2d402d',
+                            900: '#1a261a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #fcfdfc; color: #1a261a; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeIn 0.4s ease-out; }
+        .tab-btn.active { border-bottom: 2px solid #5e7d5e; color: #2d402d; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .geometric-line { border-left: 1px solid #d0d8ce; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sage-100">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-[10px] font-semibold tracking-[0.25em] text-sage-900 uppercase">M. RIBEIRO SOUSA</span>
+            <a href="https://www.linkedin.com/in/mariana-ribeiro-sousa-76a879146" target="_blank" class="text-[9px] uppercase tracking-widest font-semibold text-sage-800 hover:text-sage-600 transition underline underline-offset-4">LinkedIn</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="max-w-3xl mx-auto px-6 pt-24 pb-16 text-center">
+        <h1 class="text-3xl md:text-4xl font-light text-sage-900 leading-tight mb-8 tracking-tight">
+            Building systems that empower people, not just processes.
+        </h1>
+        <p class="text-sm text-sage-800/80 font-light leading-relaxed max-w-xl mx-auto">
+            I believe that effective transformation is about clarity and confidence. My journey is dedicated to simplifying the complex and creating spaces where teams can thrive. I'd love for you to explore how we might align our perspectives.
+        </p>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-24">
+        <!-- Navigation -->
+        <div class="flex space-x-6 border-b border-sage-100 mb-12 overflow-x-auto pb-1">
+            <button onclick="switchTab('summary')" id="btn-summary" class="tab-btn active pb-4 text-[10px] uppercase tracking-widest font-semibold transition whitespace-nowrap">Executive Summary</button>
+            <button onclick="switchTab('experience')" id="btn-experience" class="tab-btn pb-4 text-[10px] uppercase tracking-widest font-semibold text-sage-400 hover:text-sage-600 transition whitespace-nowrap">Trajectory</button>
+            <button onclick="switchTab('metrics')" id="btn-metrics" class="tab-btn pb-4 text-[10px] uppercase tracking-widest font-semibold text-sage-400 hover:text-sage-600 transition whitespace-nowrap">Metrics</button>
+            <button onclick="switchTab('dib-newsletter')" id="btn-dib-newsletter" class="tab-btn pb-4 text-[10px] uppercase tracking-widest font-semibold text-sage-400 hover:text-sage-600 transition whitespace-nowrap">DIB & Belonging</button>
+            <button onclick="switchTab('toolkit')" id="btn-toolkit" class="tab-btn pb-4 text-[10px] uppercase tracking-widest font-semibold text-sage-400 hover:text-sage-600 transition whitespace-nowrap">Toolkit</button>
+        </div>
+
+        <!-- Executive Summary -->
+        <section id="summary" class="tab-content active space-y-6">
+            <div class="p-8 bg-white border border-sage-100 rounded-sm">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-sage-900 mb-6">Strategic Profile</h2>
+                <p class="text-sm text-sage-800/80 leading-relaxed mb-6">
+                    PMP-certified Transformation Leader with a focus on human-centric systems. Expert in navigating complexity within multi-site, regulated environments, I bridge the gap between high-level strategy and operational execution. My career is defined by scaling team capability, driving procurement governance, and using data-driven insights to foster inclusive, high-performing organizational cultures.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6 pt-6 border-t border-sage-100">
+                    <div>
+                        <h4 class="text-[10px] uppercase font-bold text-sage-600 mb-2">Core Value Prop</h4>
+                        <p class="text-[11px] text-sage-800 leading-relaxed">Turning operational complexity into scalable, governed systems. I build environments where process rigor meets team empowerment.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-[10px] uppercase font-bold text-sage-600 mb-2">Key Differentiator</h4>
+                        <p class="text-[11px] text-sage-800 leading-relaxed">A DIB Changemaker who treats governance as community building—translating technical frameworks into accessible narratives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="tab-content space-y-12">
+            <div class="space-y-10">
+                <div class="group border-l border-sage-200 pl-8 relative">
+                    <div class="absolute -left-[3px] top-1.5 w-[6px] h-[6px] bg-sage-600 rounded-full"></div>
+                    <h3 class="text-md font-medium text-sage-900">Manager, Continuous Improvement | Canadian Tire</h3>
+                    <p class="text-[9px] text-sage-500 mb-2 tracking-widest uppercase">August 2025 - Present</p>
+                    <p class="text-sm text-sage-800/80 leading-relaxed">Direct report to SVP. Leading 12+ workstreams, $15.5M+ in procurement oversight, and scaling AI-driven enablement for 54+ employees.</p>
+                </div>
+                <div class="group border-l border-sage-200 pl-8 relative">
+                    <div class="absolute -left-[3px] top-1.5 w-[6px] h-[6px] bg-sage-300 rounded-full"></div>
+                    <h3 class="text-md font-medium text-sage-900">Contract Administrator | Canadian Tire</h3>
+                    <p class="text-[9px] text-sage-500 mb-2 tracking-widest uppercase">2022 - 2025</p>
+                    <p class="text-sm text-sage-800/80 leading-relaxed">Led end-to-end RFx lifecycles for $13M+ in construction procurement. Recognized DIB Changemaker.</p>
+                </div>
+                <div class="group border-l border-sage-200 pl-8 relative">
+                    <div class="absolute -left-[3px] top-1.5 w-[6px] h-[6px] bg-sage-300 rounded-full"></div>
+                    <h3 class="text-md font-medium text-sage-900">Legal Administration | Ministério Público</h3>
+                    <p class="text-[9px] text-sage-500 mb-2 tracking-widest uppercase">2014 - 2019</p>
+                    <p class="text-sm text-sage-800/80 leading-relaxed">Drafted procurement disputes and compliance documentation. Foundation for risk identification.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metrics -->
+        <section id="metrics" class="tab-content space-y-8">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-8 bg-sage-50 border border-sage-100 rounded-sm">
+                    <span class="block text-3xl font-light text-sage-600 mb-2">$15.5M</span>
+                    <span class="text-[10px] uppercase tracking-widest text-sage-800 font-semibold">Procurement Oversight</span>
+                </div>
+                <div class="p-8 bg-sage-50 border border-sage-100 rounded-sm">
+                    <span class="block text-3xl font-light text-sage-600 mb-2">12+</span>
+                    <span class="text-[10px] uppercase tracking-widest text-sage-800 font-semibold">Workstreams Led</span>
+                </div>
+                <div class="p-8 bg-sage-50 border border-sage-100 rounded-sm">
+                    <span class="block text-3xl font-light text-sage-600 mb-2">11+</span>
+                    <span class="text-[10px] uppercase tracking-widest text-sage-800 font-semibold">Hours Saved/Emp.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIB & Newsletter -->
+        <section id="dib-newsletter" class="tab-content space-y-8">
+            <div class="p-8 bg-sage-50 border border-sage-100 rounded-sm space-y-6">
+                <h3 class="text-lg font-medium text-sage-900">Diversity, Inclusion, and Belonging</h3>
+                <p class="text-sm text-sage-800/80 leading-relaxed">
+                    Recognized as a <strong>DIB Changemaker</strong> in the 2024 Canadian Tire Corporate Report. My approach integrates DIB principles directly into operational workflows, ensuring equity is not an add-on, but a core component of team structure.
+                </p>
+                <div class="h-px bg-sage-200"></div>
+                <h4 class="text-xs font-semibold uppercase tracking-widest text-sage-900">Governance & Community Newsletters</h4>
+                <p class="text-sm text-sage-800/80 leading-relaxed">
+                    I treat internal communication as a governance tool. By translating complex procurement and ESG frameworks into accessible narratives, I bridge the gap between technical requirements and human experience, fostering a deep sense of belonging and community among diverse teams.
+                </p>
+            </div>
+        </section>
+
+        <!-- Toolkit -->
+        <section id="toolkit" class="tab-content">
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-white border border-sage-200 text-[10px] text-sage-800 uppercase tracking-wide">PMP Certified</span>
+                <span class="px-4 py-2 bg-white border border-sage-200 text-[10px] text-sage-800 uppercase tracking-wide">ESG Governance</span>
+                <span class="px-4 py-2 bg-white border border-sage-200 text-[10px] text-sage-800 uppercase tracking-wide">Coupa / Lucernex</span>
+                <span class="px-4 py-2 bg-white border border-sage-200 text-[10px] text-sage-800 uppercase tracking-wide">Procurement Law</span>
+                <span class="px-4 py-2 bg-white border border-sage-200 text-[10px] text-sage-800 uppercase tracking-wide">Power Automate</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chat/Connect -->
+    <section class="max-w-5xl mx-auto px-6 pb-24">
+        <div class="border border-sage-100 p-8 rounded-sm bg-white">
+            <h2 class="text-xs font-semibold tracking-widest uppercase text-sage-900 mb-6">Strategic Thought Partner</h2>
+            <div id="chat-container" class="h-40 overflow-y-auto mb-6 p-6 bg-sage-50 rounded-sm text-[11px] text-sage-800 space-y-4 italic border border-sage-100">
+                <p>Assistant: How can I help you explore my research methods, DIB initiatives, or approach to governance?</p>
+            </div>
+            <div class="flex gap-4">
+                <input id="chat-input" type="text" placeholder="Inquire about my work..." class="flex-grow p-3 bg-white border border-sage-200 text-xs focus:outline-none focus:border-sage-600 transition">
+                <button onclick="handleChat()" class="px-8 py-3 bg-sage-900 text-white font-bold text-[10px] uppercase tracking-widest hover:bg-sage-600 transition">Ask</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function switchTab(id) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            document.getElementById('btn-' + id).classList.add('active');
+        }
+
+        function handleChat() {
+            const input = document.getElementById('chat-input');
+            const container = document.getElementById('chat-container');
+            if(!input.value) return;
+            container.innerHTML += `<p><strong>You:</strong> ${input.value}</p>`;
+            container.innerHTML += `<p><strong>Assistant:</strong> As a strategic partner, I analyze complex systems through the lens of continuous improvement. My work, from procurement governance to DIB initiatives, focuses on humanizing technical processes. How can I apply this to your current challenges?</p>`;
+            container.scrollTop = container.scrollHeight;
+            input.value = '';
+        }
+    </script>
+</body>
+</html>
