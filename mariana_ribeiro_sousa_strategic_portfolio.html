@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariana Ribeiro Sousa | Strategic Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        sage: {
+                            50: '#f6f9f6',
+                            100: '#e1e8e1',
+                            200: '#c5d1c5',
+                            600: '#5e7d5e',
+                            800: '#2d402d',
+                            900: '#1a261a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #fdfdfc; color: #1a261a; }
+        .geometric-card { border: 1px solid rgba(94, 125, 94, 0.1); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { border-bottom: 2px solid #5e7d5e; color: #2d402d; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sage-100">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-xs font-semibold tracking-widest text-sage-900 uppercase">M. RIBEIRO SOUSA</span>
+            <div class="flex items-center space-x-6 text-[10px] uppercase tracking-widest font-medium text-sage-800">
+                <a href="https://www.linkedin.com/in/mariana-ribeiro-sousa-76a879146" target="_blank" class="hover:text-sage-600 transition">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="max-w-3xl mx-auto px-6 py-24 text-center">
+        <h1 class="text-3xl md:text-4xl font-light text-sage-900 leading-tight mb-8">
+            Building systems that empower people, not just processes.
+        </h1>
+        <p class="text-md text-sage-800/80 font-light leading-relaxed">
+            I believe that effective transformation is about clarity and confidence. My journey is dedicated to simplifying the complex and creating spaces where teams can thrive. I'd love for you to explore how we might align our perspectives.
+        </p>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-24">
+        
+        <div class="flex space-x-8 border-b border-sage-100 mb-12 overflow-x-auto">
+            <button onclick="switchTab('experience')" id="btn-experience" class="tab-btn active pb-4 text-[10px] uppercase tracking-widest font-semibold">Trajectory</button>
+            <button onclick="switchTab('metrics')" id="btn-metrics" class="tab-btn pb-4 text-[10px] uppercase tracking-widest font-semibold text-sage-400 hover:text-sage-600">Impact Metrics</button>
+            <button onclick="switchTab('tools')" id="btn-tools" class="tab-btn pb-4 text-[10px] uppercase tracking-widest font-semibold text-sage-400 hover:text-sage-600">Toolkit</button>
+        </div>
+
+        <!-- Experience Tab -->
+        <section id="experience" class="tab-content active space-y-12">
+            <div class="space-y-8">
+                <div class="group border-l-2 border-sage-200 pl-6">
+                    <h3 class="text-lg font-medium text-sage-900">Manager, Continuous Improvement | Canadian Tire</h3>
+                    <p class="text-xs text-sage-600 mb-2">2025 - Present</p>
+                    <p class="text-sm text-sage-800/80 leading-relaxed">Leading end-to-end transformation across 12+ workstreams, reporting directly to SVP. Designed AI literacy programs and automated workflows, reducing onboarding time by ~2 weeks. Managing $15.5M+ portfolio.</p>
+                </div>
+                <div class="group border-l-2 border-sage-200 pl-6">
+                    <h3 class="text-lg font-medium text-sage-900">Contract Administrator | Canadian Tire</h3>
+                    <p class="text-xs text-sage-600 mb-2">2022 - 2025</p>
+                    <p class="text-sm text-sage-800/80 leading-relaxed">Managed $13M+ in construction procurement. Spearheaded ESG-aligned evaluation frameworks. Recognized as a DIB Changemaker in 2024.</p>
+                </div>
+                <div class="group border-l-2 border-sage-200 pl-6">
+                    <h3 class="text-lg font-medium text-sage-900">Legal Administration | Ministério Público</h3>
+                    <p class="text-xs text-sage-600 mb-2">2014 - 2019</p>
+                    <p class="text-sm text-sage-800/80 leading-relaxed">Foundational experience in high-stakes contract disputes, legal research, and regulatory compliance within a state-level authority.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metrics Tab -->
+        <section id="metrics" class="tab-content">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-8 rounded-2xl geometric-card bg-white shadow-sm">
+                    <p class="text-[10px] text-sage-600 uppercase tracking-widest mb-2">Strategic Portfolio</p>
+                    <h3 class="text-3xl font-light text-sage-900">$15.5M+</h3>
+                    <p class="text-xs text-sage-800/60 mt-2">Construction & operational procurement oversight.</p>
+                </div>
+                <div class="p-8 rounded-2xl geometric-card bg-white shadow-sm">
+                    <p class="text-[10px] text-sage-600 uppercase tracking-widest mb-2">Process Efficiency</p>
+                    <h3 class="text-3xl font-light text-sage-900">11+ Hrs</h3>
+                    <p class="text-xs text-sage-800/60 mt-2">Time reclaimed per team member annually via automation.</p>
+                </div>
+                <div class="p-8 rounded-2xl geometric-card bg-white shadow-sm">
+                    <p class="text-[10px] text-sage-600 uppercase tracking-widest mb-2">Operational Scale</p>
+                    <h3 class="text-3xl font-light text-sage-900">1,800+</h3>
+                    <p class="text-xs text-sage-800/60 mt-2">Retail stores supported through enterprise transformation.</p>
+                </div>
+                <div class="p-8 rounded-2xl geometric-card bg-white shadow-sm">
+                    <p class="text-[10px] text-sage-600 uppercase tracking-widest mb-2">Project Scope</p>
+                    <h3 class="text-3xl font-light text-sage-900">12+</h3>
+                    <p class="text-xs text-sage-800/60 mt-2">End-to-end workstreams transformed.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Tab -->
+        <section id="tools" class="tab-content">
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-sage-50 border border-sage-100 rounded-full text-xs text-sage-800">Power Automate</span>
+                <span class="px-4 py-2 bg-sage-50 border border-sage-100 rounded-full text-xs text-sage-800">Coupa</span>
+                <span class="px-4 py-2 bg-sage-50 border border-sage-100 rounded-full text-xs text-sage-800">PMP Certified</span>
+                <span class="px-4 py-2 bg-sage-50 border border-sage-100 rounded-full text-xs text-sage-800">RFx Lifecycle</span>
+                <span class="px-4 py-2 bg-sage-50 border border-sage-100 rounded-full text-xs text-sage-800">Jira</span>
+                <span class="px-4 py-2 bg-sage-50 border border-sage-100 rounded-full text-xs text-sage-800">Data Integration</span>
+                <span class="px-4 py-2 bg-sage-50 border border-sage-100 rounded-full text-xs text-sage-800">Change Leadership</span>
+                <span class="px-4 py-2 bg-sage-50 border border-sage-100 rounded-full text-xs text-sage-800">MS Project</span>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="max-w-5xl mx-auto px-6 pb-24">
+        <div class="bg-sage-900 p-8 rounded-3xl text-white">
+            <h2 class="text-lg font-medium mb-4">Strategic Career Assistant</h2>
+            <div id="chat-container" class="h-40 overflow-y-auto mb-6 p-6 bg-sage-800 rounded-2xl text-sm text-white/90 space-y-4">
+                <p>Hello. I'm your assistant for Mariana's professional profile. Ask me about her approach to transformation, procurement strategy, or leadership. How can I help you understand her impact?</p>
+            </div>
+            <div class="flex gap-4">
+                <input id="chat-input" type="text" placeholder="Ask about strategy or experience..." class="flex-grow p-4 bg-sage-800 rounded-xl focus:outline-none focus:ring-1 focus:ring-sage-600 border border-sage-700">
+                <button onclick="handleChat()" class="px-8 py-4 bg-white text-sage-900 font-medium rounded-xl hover:bg-sage-100 transition">Inquire</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Tab switching logic
+        function switchTab(id) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active', 'text-sage-900'));
+            
+            document.getElementById(id).classList.add('active');
+            document.getElementById('btn-' + id).classList.add('active', 'text-sage-900');
+        }
+
+        // Simple chat logic
+        function handleChat() {
+            const input = document.getElementById('chat-input');
+            const container = document.getElementById('chat-container');
+            if(!input.value) return;
+            
+            container.innerHTML += `<p class="text-right text-white/60 italic">You: ${input.value}</p>`;
+            container.innerHTML += `<p><strong>Assistant:</strong> Mariana’s methodology bridges the gap between complex operational data and human-centric strategy. By unifying cross-functional workstreams, she enables teams to scale effectively. Would you like to know more about her RFP process or her approach to team enablement?</p>`;
+            container.scrollTop = container.scrollHeight;
+            input.value = '';
+        }
+    </script>
+</body>
+</html>
